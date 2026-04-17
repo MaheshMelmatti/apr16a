@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Hub | Contact</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">⚙️ DevOps Hub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pipeline.html">Pipeline</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+    <p>Reach out to the DevOps team</p>
+  </section>
+
+  <section class="section">
+    <div class="contact-layout">
+
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <div class="info-item">📧 <span>devops@devopshub.com</span></div>
+        <div class="info-item">📞 <span>+91 98765 43210</span></div>
+        <div class="info-item">📍 <span>Pune, Maharashtra, India</span></div>
+        <div class="info-item">🕐 <span>Mon–Fri, 9AM – 6PM IST</span></div>
+
+        <h2 style="margin-top:32px;">Team Contacts</h2>
+        <div class="info-item">👤 <span>Mahesh — mahesh@devopshub.com</span></div>
+        <div class="info-item">👤 <span>Ruchita — ruchita@devopshub.com</span></div>
+        <div class="info-item">👤 <span>Srujan — srujan@devopshub.com</span></div>
+        <div class="info-item">👤 <span>Shraddha — shraddha@devopshub.com</span></div>
+      </div>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <h2>Send a Message</h2>
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your Email" required/>
+        <select>
+          <option value="">Select Topic</option>
+          <option>Pipeline Issue</option>
+          <option>Tool Support</option>
+          <option>Deployment Help</option>
+          <option>General Query</option>
+        </select>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DevOps Hub | Team: Mahesh · Ruchita · Srujan · Shraddha</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('✅ Message sent! Team will get back to you soon.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
